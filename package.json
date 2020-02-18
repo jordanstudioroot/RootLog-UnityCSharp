@@ -1,0 +1,1 @@
+{"name":"rootlog-unitycsharp","version":"1.0.0","files":["Assets/rootlog-unitycsharp","scripts"],"scripts":{"postinstall":"node scripts/postinstall.js rootlog-unitycsharp"},"dependencies":{"ncp":"^2.0.0","mkdirp":"^0.5.1"}}
