@@ -3,7 +3,7 @@ using System.IO;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace RootLog {
+namespace RootLogging {
 
     public enum Severity {
         Trace, // Information that is valuable only for debugging.
