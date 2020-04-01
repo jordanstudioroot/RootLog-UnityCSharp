@@ -35,6 +35,12 @@ namespace RootLogging {
 
         // METHODS ~~~~~~~~~
 
+/// <summary>
+/// Log an event.
+/// </summary>
+/// <param name="message">A message associated with the event.</param>
+/// <param name="severity">The severity of the event.</param>
+/// <param name="category">An optional category for the event.</param>
         public static void Log(
             string message, 
             Severity severity = Severity.Debug, 
@@ -76,6 +82,10 @@ namespace RootLogging {
             }
         }
 
+/// <summary>
+/// Dump the event log to a text file.
+/// </summary>
+/// <param name="target">Target path for the text file dump.</param>
         public static void ToFile(string target) {
             if (!File.Exists(target)) {
                 StreamWriter sw = File.CreateText(target);
@@ -100,10 +110,16 @@ namespace RootLogging {
             }
         }
 
+/// <summary>
+/// Dump the event log to a database. [Not implemented]
+/// </summary>
         public static void ToDatabase() {
             throw new System.NotImplementedException();
         }
 
+/// <summary>
+/// Dump an event to a json file. [Not implemented]
+/// </summary>
         public static void ToJSON() {
             throw new System.NotImplementedException();
         }
