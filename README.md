@@ -9,7 +9,13 @@ Declare `using RootLogging` at the top of the source file.
 
 Call the static Log method using `RootLog.Log([information to log])`. Optionally, specify the severity of the event being logged using `RootLog.Log([information to log], Severity.[Severity types]`.
 
+Log will output to Unity editor's debug window.
+
 Log severity types correspond to [standard log levels in .NET](https://docs.microsoft.com/en-us/dotnet/api/microsoft.extensions.logging.loglevel?view=dotnet-plat-ext-3.1).
+
+# TODO
+- [ ] Support for JSON and raw text file output.
+- [ ] Support for logging history.
 
 # Criticisms, Suggestions, Pull Requests
 Email: jordannelson@protonmail.com
